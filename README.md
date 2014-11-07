@@ -1,6 +1,17 @@
-loja
-====
+loja tsi14
+==========
 
-Projeto exemplo para as aulas de Programação Web com a turma TSI14
+Projeto exemplo para as aulas de Programação da turma TSI14
 
-Implementação de uma versão SIMPLIFICADA de uma loja virtual
+Desenvolvida por Carlos G. Godri e Patrick Di Pierre
+
+Implementação de uma versão simples de loja virtual
+
+>Instalacao
+
+**Crie um banco de dados com o nome loja**
+
+<code>CREATE DATABASE loja;</code>
+
+***EM ATUALIZACAO***
+
