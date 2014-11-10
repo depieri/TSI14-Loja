@@ -13,10 +13,10 @@ Implementação de uma versão simples de loja virtual
 
 <code>CREATE DATABASE loja;</code>
 
-**Depois crie uma tabela chamada preco com os campos ID, NOME, DETALHES, PRECO**
+**Depois crie uma tabela chamada preco com os campos ID, NOME, DETALHES, imgURL, PRECO, categoria_id**
 
 <code>
-CREATE TABLE produtos (id integer auto_increment primary key, nome varchar(255) not null, detalhes text not null, preco decimal (10,2));
+CREATE TABLE produtos (id integer auto_increment primary key, nome varchar(255) not null, detalhes text not null, imgURL text, preco decimal (10,2), categoria_id integer not null);
 </code>
 
 **Sugiro adcionar um item na tabela produtos para testar**
@@ -30,9 +30,5 @@ INSERT INTO produtos VALUES (1, 'Sapato','Sapato de cristal feito para alguma pr
 CREATE TABLE categorias (id integer auto_increment primary key, nome varchar(255));
 </code>	
 
-**Adcionado mais uma coluna na tablela Produtos a coluna para o departamento**
-<code>
-ALTER TABLE produtos ADD COLUMN categoria_id integer;
-</code>	
 ***EM ATUALIZACAO***
 
