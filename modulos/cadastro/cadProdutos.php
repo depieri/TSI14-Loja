@@ -10,6 +10,7 @@
 				<fieldset>
 					<legend>Dados do produto <a href="index.php?mod=listProduto" class="lista" >Ver Todos</a>
                     </legend>
+                    <form action="<?=URL_BASE?>lib/functions/insertProdutos.php" method="post">
 					<div class="form-group">
 						<label for="nome">Nome:</label>
 						<input type="text" name="nome" id="nome" value="">
@@ -17,9 +18,12 @@
 					<div class="form-group">
 						<legend>Departamento:</legend>
 						<?php foreach ($categorias as $categoria) : ?>
-							<input type="radio" name="descricao_id" value"<?=$categoria['id']?>"><?=$categoria['nome']?></br>
-						<?php endforeach ?>	
-						<input type="radio" name="categoria" value="">
+                        <table border="1px">
+                            <td>
+                        <input type="radio" name="descricao_id" value"<?=$categoria['id']?>"><?=$categoria['nome']?>
+                            </td>
+                        </table>
+						<?php endforeach ?>
 					</div>
 					<hr>
 					<div class="form-group">
@@ -41,6 +45,7 @@
 					<button type="submit">Gravar</button>
 					<button type="reset">Limpar</button>
 				</div>
+                </form>
        </fieldset>
-			</form>
+
 </div>

@@ -22,7 +22,7 @@ foreach ($produtos as $produto) :
 	<td><?=$produto['nome']?></td>
 	<td><?=$produto['detalhes']?></td>
 	<td><?=$produto['preco']?></td>
-	<form action="funcProdutos.php" method="post">
+	<form action="<?=URL_BASE?>lib/functions/removeProdutos.php" method="post">
 	<input type="hidden" name="id" value="<?=$produto['id']?>">
 	<td><button class="btn btn-danger">Remover</button></td>
 	</form>
