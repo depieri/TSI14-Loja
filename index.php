@@ -80,9 +80,9 @@ require_once("lib/config.php");
                                     Para adicionar produtos ao carrinho é necessário efetuar o login.
                                 </div>
                                 <label for="email">Email</label>
-                                <input type="email" name="email" value="fabiogoodoy@gmail.com">
+                                <input type="email" name="email" value="">
                                 <label for="senha">Senha</label>
-                                <input type="password" name="senha" value="123456">
+                                <input type="password" name="senha" value="">
                             </div>
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary">Logar</button>
