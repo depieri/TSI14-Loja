@@ -3,7 +3,6 @@ require_once("lib/config.php");
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Loja</title>
@@ -28,6 +27,8 @@ require_once("lib/config.php");
                                 <br>
                                 <span class="tit_menu">Home</span>
                             </a>
+
+
                         </li>
                         <li class="menu">
                             <a href="index.php?mod=login">
