@@ -32,3 +32,5 @@ CREATE TABLE categorias (id integer auto_increment primary key, nome varchar(255
 
 ***EM ATUALIZACAO***
 
+>CONFIGURANDO ARQUIVOS
+
