@@ -492,21 +492,16 @@ button.pague:hover{
 	margin-right:15px;
 }
 
-.lista{
-	background:#46A3FF;
-	color:#fff;
-	margin-top:10px;
-	width:150px;
-	font-size:18px;
-	font-family: 'Roboto', sans-serif;
-	padding:5px 15px;
-	border:none;
-	border-bottom:2px #46A3FF solid;
-    border-radius: 10px;
+/* Likebox Facebook */
+.fb-wrap{
+	width:285px;
+	height:210px;
+	overflow:hidden;
+	background:#fff;
 }
-.lista:hover{
-	background:#379BFF;
-	border-bottom:2px #06F solid;
-	color:#fff;
-    border-radius: 10px;
+.fb-wrap > div{
+	margin: -1px 0px 0px -1px;
 }
+/* Fim - Likebox Facebook */
+
+/* Fim - Rodapé */

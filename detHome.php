@@ -1,24 +1,34 @@
-<h1>Nossos Produtos!</h1>
+<h1>Nossos Produtos</h1>
 <ul class="unstyled lis_produtos">
+    <?php
+        $sql = mysql_query("SELECT * FROM produto ORDER BY produto_id DESC");
+        if(mysql_num_rows($sql)==true){
+            while($ln = mysql_fetch_assoc($sql)){
+
+    ?>
     <li>
-        <a href="#" title="">
+        <a <?php if(isset($_SESSION['usuario_id'])){ ?>href="modulos/loja/funLoja.php?op=add&produto_id=<?=$ln['produto_id']?>" <?php }else{?>href="#login" data-toggle="modal" <?php } ?> title="<?=$ln['titulo']?>">
             <span class="img">
-                <img src="http://parisbolsas.com.br/images/bolsa-louis-vuitton-D1010073-1.jpg" alt="">
+                <img src="<?=URL?>/lib/rdmc.php?src=<?=URL?>/img/loja/<?=$ln['foto']?>&q=100&h=100&w=160" alt="<?=$ln['titulo']?>">
             </span>
             <span class="titulo">
-                Titulo do meu produto
+                <?=$ln['titulo']?>
                 <span class="paragraph-end"></span>
             </span>
             <span class="subtitulo">
-                Subtitulo longo para est produto
+                <?=$ln['subtitulo']?>
                 <span class="paragraph-end"></span>
             </span>
             <span class="preco">
-                R$ 59,90
+                R$ <?=Real($ln['preco'])?>
             </span>
             <span class="comprar">
                 <i class="icon-shopping-cart"></i> Comprar
             </span>
         </a>
     </li>
+    <?php
+            }
+        }
+    ?>
 </ul>

@@ -1,10 +1,10 @@
 <h1>Faça o Login</h1>
 <div class="login">
-    <form action="#" method="post">
+    <form action="<?=URL?>/modulos/login/funLogin.php?op=login" method="post">
     	<label for="email">E-mail</label>
-    	<input type="email" name="email" id="email" required="required" />
+    	<input type="email" name="email" id="email" required="required" value="admin@admin.com" />
     	<label for="senha">Senha</label>
-	    <input type="password" name="senha" id="senha" required="required" />
+	    <input type="password" name="senha" id="senha" required="required" value="admin"/>
 	    <button type="submit"><i class="icon-signin"></i> Entrar</button>
     </form>
 </div>
