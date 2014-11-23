@@ -9,7 +9,7 @@
     <li>
         <a <?php if(isset($_SESSION['usuario_id'])){ ?>href="modulos/loja/funLoja.php?op=add&produto_id=<?=$ln['produto_id']?>" <?php }else{?>href="#login" data-toggle="modal" <?php } ?> title="<?=$ln['titulo']?>">
             <span class="img">
-                <img src="<?=URL?>/lib/rdmc.php?src=<?=URL?>/img/loja/<?=$ln['foto']?>&q=100&h=100&w=160" alt="<?=$ln['titulo']?>">
+                <img src="<?=URL?>/img/loja/<?=$ln['foto']?>" alt="<?=$ln['titulo']?>">
             </span>
             <span class="titulo">
                 <?=$ln['titulo']?>
