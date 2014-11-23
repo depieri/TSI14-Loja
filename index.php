@@ -65,8 +65,8 @@ define("URL", "http://".$_SERVER['HTTP_HOST']."/TSI14-Loja");
                             <?php
                                 $cont = mysql_query("SELECT COUNT(carrinho_id) as total_produtos FROM carrinho WHERE usuario_id = '".$_SESSION['usuario_id']."'");
                                 if(mysql_num_rows($cont)==true){
-                                    while($lc = mysql_fetch_assoc($cont)){
-                                        echo $lc['total_produtos'];
+                                    while($ln = mysql_fetch_assoc($cont)){
+                                        echo $ln['total_produtos'];
                                     }
                                 }
                             ?>
@@ -103,7 +103,7 @@ define("URL", "http://".$_SERVER['HTTP_HOST']."/TSI14-Loja");
 	                                    <tr>
 		                                	<td width="90" align="center">
 		                                    	<a href="index.php?mod=carrinho">
-	                                            	<img src="<?=URL?>/lib/rdmc.php?src=<?=URL?>/img/loja/<?=$ln['foto']?>&q=100&h=60&w=60" alt="">
+	                                            	<img src="<?=URL?>/img/loja/<?=$ln['foto']?>" alt="">
 	                                            </a>
 		                                    </td>
 		                                    <td width="200" align="left">
@@ -161,6 +161,19 @@ define("URL", "http://".$_SERVER['HTTP_HOST']."/TSI14-Loja");
                         <?php
                             }
                         ?>
+                        <?php
+                            if ($_SESSION['usuario_id']== 1){
+                         ?>
+                        	<li class="menu">
+                        	<a href="index.php?mod=admin">
+                            	<i class="icon-cogs"></i>
+                                <br>
+	                    		<span class="tit_menu">Administração</span>
+                            </a>
+                        </li>
+                       <?php
+                            }
+                        ?>
                     </ul>
                 </div>
             </div>
@@ -200,6 +213,7 @@ define("URL", "http://".$_SERVER['HTTP_HOST']."/TSI14-Loja");
             </div>
         </div>
     </main>
+
 
     <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -19,6 +19,10 @@
 			include "modulos/login/cadLogin.php";
 			break;
 
+            case 'admin':
+            include "modulos/admin/areaAdmin.php";
+            break;
+
 
 		}
 	}

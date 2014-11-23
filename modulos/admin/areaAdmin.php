@@ -1,11 +1,8 @@
-<!doctype html>
-<html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<title>Cadastro de Usuários</title>
-</head>
-<body>
-	<form method="post" action="funCadastro.php">
+<?php
+ if ($_SESSION['usuario_id'] == 1){
+?>
+
+	<form method="post" action="modulos/admin/funCadastroUser.php">
 		<label for="nome">Nome</label>
 		<input type="text" name="nome" id="nome">
 		<br>
@@ -23,5 +20,10 @@
 		<br>
 		<button type="submit">Cadastrar</button>
 	</form>
-</body>
-</html>
+
+<?php
+    }else{
+     header('Location:http:index.php?mod=login');
+     die;
+    }
+?>
