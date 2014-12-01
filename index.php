@@ -14,6 +14,7 @@ define("URL", "http://".$_SERVER['HTTP_HOST']."/TSI14-Loja");
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 	<header class="topo">
@@ -217,6 +218,7 @@ define("URL", "http://".$_SERVER['HTTP_HOST']."/TSI14-Loja");
 
     <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
